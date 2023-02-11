@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculadora</title>
+  <script src="arquivo.js" type="script/javascript">
+    function definirValores () {
+        var a = document.getElementById("numberA")
+        var b = document.getElementById("numberB")
+    function addEventos(){
+        document.getElementById("btn1").addEventListener("click",definirValores);
+    }
+    window.addEventListener("load", addEventos);
+    
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Calculadora</h1>
+    <section class="entradas">
+      <label for="numberA">Primeiro Número</label>
+      <input type="number" id="numberA"></input>
+    <label for="numberB">Segundo Número</label>
+      <input type="number" id="numberB"></input>
+  <button id="btn1" onclick="definirValores()" >Definir Valores</button>
+  </header>
+  <main>
+    <div id="soma">Soma</div>
+    <div id="subtracao">Subtração A - B</div>
+    <div id="subtracao_oposta">Subtração B - A</div>
+    <div id="">Multiplicação</div>
+    <div>Divisão A/B</div>
+    <div>Divisão B/A</div>
+    <div>Potência de A na base B</div>
+    <div>Raiz quadrada de A</div>
+    <div>Potência de B na base A</div>
+    <div>Raiz quadrada de B</div>
+    <div>Fatorial de A</div>
+    <div>Fatorial de B</div>
+    <div>Porcentagem de A em relação a B</div>
+    <div>Porcentagem de B em relação a A</div>
+    <div>Média</div>
+    
+</body>
+</html>
